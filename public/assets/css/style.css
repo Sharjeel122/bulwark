@@ -1,0 +1,836 @@
+
+/*font start*/
+
+@font-face {
+    font-family:"Poppins-SemiBold";
+
+    src: url(../fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family:"Poppins-ExtraBold";
+
+    src: url(../fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family:"Poppins-Bold";
+
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family:"Poppins-Regular";
+
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family:"Poppins-Light";
+
+    src: url(../fonts/Poppins-Light.ttf);
+}
+@font-face {
+    font-family:"Poppins-Medium";
+
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family:"SF-Pro-Display-Bold";
+
+    src: url(../fonts/SF-Pro-Display-Bold.otf);
+}
+@font-face {
+    font-family:"SF-Pro-Display-Regular";
+
+    src: url(../fonts/SF-Pro-Display-Regular.otf);
+}
+.sf-regular{
+    font-family:"SF-Pro-Display-Regular";
+}
+.sf-bold{
+    font-family:"SF-Pro-Display-Bold";
+}
+.p-light{
+    font-family:"Poppins-Light";
+}
+.p-medium{
+    font-family:"Poppins-Medium";
+}
+.popin-semibold{
+    font-family:"Poppins-SemiBold";
+}
+.p-extra-bold{
+    font-family:"Poppins-ExtraBold";
+}
+.p-bold{
+    font-family:"Poppins-Bold";
+}
+.p-regular{
+    font-family:"Poppins-Regular";
+}
+
+
+
+/*=============================================== globle css start  ==================================================*/
+body,html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    color: #f05a22;
+    text-decoration: none;
+    background-color: transparent;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0;
+}
+
+h1,h2,h3,h4,h5{
+    font-family:"Poppins-Bold";
+}
+p,input,select,.form-check-label,h6{
+    font-family:"Poppins-Regular";
+}
+a:hover{
+    text-decoration: none;
+}
+::selection {
+    color: white;
+    background: #092A49;
+  }
+  ::marker {
+    color: #021322;
+}
+.v-none{
+    visibility:hidden;
+}
+.btn-default-blue{
+    font-size: 16px;
+    margin-top: 5px;
+    padding: 5px 20px;
+    background: #F05A22;
+    color: white;
+    font-family: "Poppins-Regular";
+}
+.btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #092A49;
+    outline: 0;
+    box-shadow: none;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+button:focus {
+    outline: 1px dotted;
+    outline: none;
+}
+a.page-link:focus {
+    box-shadow: 0px 0px 6px -1px #6fe496;
+}
+.text-green{
+    color: #147504;
+}
+small.credit {
+      font-family:"Poppins-Light";
+    color: #484848;
+    font-size: 10px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+}
+
+.reply-user {
+    background: #6ce3942e;
+    padding: 2%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid;
+}
+
+.reply-user img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+.reply-employee {
+    background: #0213221a;
+    padding: 2%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid;
+}
+.reply-employee img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+.sweet-alert .fa {
+    font-size: 200px;
+    color: #f05a22;
+}
+.modal-content {
+    margin-top: 15%;
+}
+
+/*=============================================== header css start  ==================================================*/
+.nav-link{
+    font-family:"Poppins-Regular";
+}
+li.nav-item.active a {
+    color: white!important;
+}
+.left-navs-list .nav-link {
+    margin-left: 15px!important;
+    margin-right: 15px;
+}
+button.navbar-toggler {
+    outline-color: white;
+}
+.logo {
+    width: 50px;
+}
+.btn-black {
+    background: black;
+    color: white;
+    box-shadow: none!important;
+    border: none!important;
+    font-size: 15px;
+}
+.btn-white {
+    background: #FAFAFA;
+    color: #000;
+    border: none!important;
+    font-size: 15px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding: 5px 25px;
+    border-radius:5px;
+
+}
+.dashoard-navbar-area-frontpages {
+    /* position: fixed; */
+    width: 100%;
+    z-index: 9999;
+     padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#F05A22 !important;
+}
+/*.intro-section{*/
+/* background-image: url("images/hero_bg.jpg"); */
+/*background-image: url("../images/background.jpg");*/
+/*background-size: 100% !important;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: bottom;*/
+/*    background-position-y: 100%;*/
+/*    background-position-x: 100%;*/
+/*}*/
+.intro-section {
+    /* background-image: url(images/hero_bg.jpg); */
+    background-image: url(../images/background.jpg);
+    background-size: 100% !important;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: 33%;
+    background-position-x: 39%;
+}
+label.form-labels {
+
+width: 100%;
+}
+.form-feilds{
+    width: 100%  !important;
+    margin: auto;
+}
+.welocme-area-main {
+    height: 100vh;
+    position: relative;
+
+}
+
+.welcome-text-area {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+}
+/*=============================================== general  ==================================================*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color:#111305;
+    text-align: right;
+
+ }
+.bg-success, .btn-success{
+    background-color: #f05a22!important;
+    border:none;
+    color: white;
+}
+.text-success{
+    color: #6fe496!important;
+}
+/*===================================================== dashboard  css  =====================================================*/
+.dashoard-navbar-area {
+    position: fixed;
+    width: 80%;
+    z-index: 9999;
+     padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#F05A22 !important;
+}
+.add-tag{
+    margin-top: 30px;
+}
+.choose-file{
+    padding: 5px 11px;
+    background: #092A49;
+    color: #fff;
+    border-radius: 5px;
+}
+/*input[type="file"] {*/
+/*    display: none;*/
+/*}*/
+.dashboard-content {
+    padding-top: 0px;
+}
+.row.dashbord-right-progess-area {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    /* margin: auto; */
+}
+.sidear-link-list {
+    padding-left: 0px;
+    /*border-bottom: 1px solid white;*/
+
+    /* margin-top: 30px !important; */
+}
+.custom-date {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.download-btn{
+    padding-top: 2px;
+    background: #1CC001;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width:50%;
+}
+
+.dashboard-sidebar {
+    width: 20%;
+    float: left;
+    background: #000000;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    /*padding: 12px;*/
+}
+.online-active {
+    color: #f05a22;
+    padding-left: 30px;
+    font-size: 10px;
+}
+.account-form-style.user-profile-form {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px!important;
+}
+li.sidear-link-list-items.active a {
+    color: white;
+    background: #f05a22;
+}
+.sidear-link-list-items-user a{
+padding: 5px 15px;
+    margin-bottom: 15px;
+    display: block;
+    font-size: 15px;
+    color: white ;
+    font-family: "Poppins-Regular";
+}
+.sidbar-disk-space {
+    padding: 5px 15px;
+    display: block;
+    font-size: 17px;
+    font-family: "Poppins-Regular";
+    color: #ffffff;
+}
+.tablebtn {
+    padding-top: 2px;
+    background: #1CC001;
+    color: white;
+    font-size: 14px;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+    padding-bottom: 2px;
+}
+
+.admin-name {
+    font-family: "Poppins-bold";
+    font-size: 14px;
+}
+.admin-name-area{
+    margin-bottom: 20px;
+    padding: 15px 15px;
+    margin-top: 70px;
+    border-bottom: 1px solid white;
+}
+.admin-username {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: grey;
+    font-family: "Poppins-Regular";
+}
+/* ul.sidear-link-list {
+    padding-left: 15px; */
+}
+.progress {
+    height: 10px;
+    margin-top: 10px!important;
+    width: 100%;
+    margin: auto;
+}
+.progress-bar-digital {
+    color: white;
+    font-size: 12px;
+}
+.p-b {
+    background-color: red;
+    width: 70%;
+    height: 10px;
+}
+.sidear-link-list-items a {
+       padding: 5px 15px;
+    display: block;
+    font-size: 15px;
+    font-family: "Poppins-Regular";
+    color: #ffffff;
+}
+.sidear-link-list-items a:hover{
+
+    background: #ffffff!important;
+    color: #092A49!important;
+}s
+.admin-sidbar-lines {
+    border-top: 1px solid #ffff;
+}
+.nav-link .fa-bell {
+    font-size: 22px;
+}
+.nav-link .fa-user {
+    font-size: 22px;
+}
+.dashoard-right-content-frontpages {
+    width: 100%;
+    /* float: right; */
+}
+
+.dashoard-right-content {
+    width: 80%;
+    float: right;
+}
+.dashboard-right-scroll-contetn {
+    padding-top: 80px;
+        padding-bottom: 40px;
+}
+.dashboard-right-title-tag h6 {
+    font-size: 18px;
+}
+.dashoard-search-field {
+    float: right;
+    width: 20%;
+}
+.dashboard-right-search {
+    margin-bottom: 15px;
+}
+.account-form-style-login {
+    width: 25%;
+    margin: auto;
+    margin-top: 30px!important;
+    margin-bottom: 30px !important;
+    background: #808080a6;
+    padding: 2%;
+    color: white;
+}
+
+.account-form-style-login-2 {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px!important;
+    margin-bottom: 30px !important;
+    background: #808080a6;
+    padding: 2%;
+    color: white;
+}
+
+
+.account-form-style {
+    margin-top: 30px;
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #dee2e6;
+    font-family: "Poppins-Regular";
+    font-size: 14px;
+}
+.dataTables_wrapper .form-control {
+    border: 1px solid #092A49;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #092A49;
+    border-color: #092A49;
+}
+.page-link {
+    position: relative;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #ffffff;
+    background-color: #092A49;
+    border-color: #092A49;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before, table.dataTable.dtr-inline.collapsed>tbody>tr>th.dtr-control:before {
+    top: 50%;
+    left: 5px;
+    height: 1em;
+    width: 1em;
+    margin-top: -12px;
+    display: block;
+    position: absolute;
+    color: white;
+    border: .15em solid white;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em #444;
+    box-sizing: content-box;
+    text-align: center;
+    text-indent: 0 !important;
+    font-family: "Courier New",Courier,monospace;
+    line-height: 1em;
+    content: "+";
+     background-color: #112a49;
+}
+table.dataTable.dtr-inline.collapsed>tbody>tr.parent>td.dtr-control:before, table.dataTable.dtr-inline.collapsed>tbody>tr.parent>th.dtr-control:before {
+    content: "-";
+    background-color: #000000;
+}
+.dataTables_wrapper {
+    font-family: 'Poppins-Regular';
+}
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+    content: "Upload File";
+}
+.upload-file-progress.progress {
+    height: 16px;
+    margin-top: 5px!important;
+    width: 100%;
+    margin: auto;
+}
+.uploaded-file-list {
+    margin-top: 35px;
+}
+.upload-file-size {
+    float: right;
+}
+.uploaded-file-names{
+ margin-bottom: 0px;
+}
+.uploaded-file-names li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.progress-bar {
+    background-color: #e62e2d;
+}
+/* dashboard modal popop css */
+
+/*===================================================== modal  css  =====================================================*/
+
+/*===================================================== footer css  =====================================================*/
+
+
+/*========================================================= login register page cs==================================== */
+form.login-form , .sign-up-form {
+    background: #6fe496;
+    width: 70%;
+    margin-top: 20px!important;
+    margin: auto;
+    margin-bottom: 20px!important;
+    padding: 40px 28px;
+    border-radius: 6px;
+}
+.login-form {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.form-tag {
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+.form-tag-desc {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+.form-chekboxes-inline-area {
+    padding-bottom: 15px;
+}
+/*----------------------------------- media queries css ----------------------------------------- */
+
+@media screen and (max-width: 1024px) {
+
+.admin-name-area h2{
+        font-size: 22px;
+}
+}
+@media screen and (max-width: 768px) {
+    .logo-text {
+        font-size: 20px !important;
+    }
+    .intro-section {
+        background-image: url(../images/homepage-background.png);
+        background-size: 70% !important;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-position-y: 100%;
+        background-position-x: 100%;
+    }
+    .account-form-style-login {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px!important;
+        margin-bottom: 30px !important;
+    }
+    small.credit {
+    font-family: "Poppins-Light";
+    color: #484848;
+    font-size: 9px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    }
+    .row.dashbord-right-progess-area {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    margin: auto;
+    }
+    .form-chekboxes-inline-area {
+    padding-bottom: 0px;
+    }
+    .dashoard-navbar-area {
+    width: 75%;
+    }
+    .account-form-style.user-profile-form {
+    width: 96%;
+    margin: auto;
+    margin-top: 30px!important;
+    }
+    .dashboard-sidebar {
+        width: 25%;
+    }
+    .dashoard-right-content {
+        width: 75%;
+    }
+    form.login-form, .sign-up-form {
+        background: #6fe496;
+        width: 100%;
+    }
+    .admin-name-area {
+        margin-bottom: 20px;
+        padding: 21px 15px;
+        margin-top: 34px !important;
+        border-bottom: 1px solid white;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .logo-text {
+        font-size: 14px  !important;
+    }
+    .intro-text {
+        font-size: 30px;
+    }
+    .intro-text-small {
+        padding-top: 15px;
+    }
+    .welcome-text-area {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+    .account-form-style-login {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px!important;
+        margin-bottom: 30px !important;
+    }
+    .intro-section {
+        background-image: url(../images/homepage-background.png);
+        background-size: 100% !important;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-position-y: 100%;
+        background-position-x: 100%;
+    }
+    .border.p-3.upload-file-mobile-fixed {
+        padding: 0px!important;
+        font-size: 16px;
+    }
+    .mobile-toggle-fixed{
+        display: inline-flex;
+        width: 100%;
+    }
+    .top-bar-tagline {
+         font-size: 15px;
+    }
+    .top-bar-tagline-helper {
+        font-size: 12px;
+    }
+    button.navbar-toggler {
+        padding-left: 0px;
+    }
+    .account-form-style.user-profile-form {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px!important;
+    }
+    .file-add-btn {
+        padding-top: 20px;
+        text-align: center;
+    }
+    .maximum-upload-size-info {
+        font-size: 12px;
+    }
+    .uploaded-file-names {
+        margin-bottom: 0px;
+        padding-left: 15px;
+    }
+    .nav-tabs .nav-link {
+        border: 1px solid #6fe496;
+        width: 100%;
+        border-radius: 0px!important;
+    }
+    .dashboard-sidebar {
+        display: none;
+    }
+    .dashoard-right-content {
+        width: 100%;
+        float: right;
+        padding: 0px;
+    }
+    .dashoard-navbar-area {
+         width: 100%;
+    }
+    .account-form-style {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .mobile-revert {
+        flex-flow: wrap-reverse;
+    }
+    ::marker {
+        color:#092a49;
+    }
+    .custom-date {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 70% !important;
+        margin: auto;
+        text-align: center;
+        border: 1px solid #112a49;
+    }
+    .download-btn {
+    background: #1CC001;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    width: 70% !important;
+    padding-bottom: 5px;
+}
+.dashboard-right-title-tag h5 {
+    font-size: 15px;
+}
+.form-feilds {
+    width: 80% !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.sidear-link-list {
+    padding-left: 0px;
+    border:none !important;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.sidear-link-list-items a {
+    padding: 10px 15px !important;
+    display: block;
+    font-size: 15px;
+    font-family: "Poppins-Regular";
+    color: #ffffff;
+}
+
+}
+@media screen and (max-width: 375px) {
+
+}
+@media screen and (max-width: 360px) {
+    .logo-text {
+        font-size: 12px !important;
+    }
+    .choose-file {
+        padding: 5px 9px;
+        background: #092A49;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+}

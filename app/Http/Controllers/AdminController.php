@@ -319,7 +319,7 @@ class AdminController extends Controller
         }
             $reports->user_id = $request->user_id;
             $reports->report_title = $request->report_title;
-            $reports->website_id = $request->website_id;
+            $reports->website_id = $request->website;
             $reports->staff_id = $request->staff_id;
 
         $reports->save();

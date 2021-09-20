@@ -29,7 +29,7 @@ class RolesAndPermissionSeeder extends Seeder
         $role = Role::create(['name' => 'admin']);
         $role->givePermissionTo([Permission::all()]);
 
-        $role = Role::create(['name' => 'customer']);
+        $role = Role::create(['name' => 'marketer']);
         $role->givePermissionTo(Permission::all());
 
         $role = Role::create(['name' => 'employee1']);
@@ -45,12 +45,12 @@ class RolesAndPermissionSeeder extends Seeder
         $user1->save();
         $user1->assignRole('admin');
 
-        // $user2 = new User;
-        // $user2->name = 'Customer';
-        // $user2->email = 'customer@gmail.com';
-        // $user2->password = Hash::make('test123');
-        // $user2->save();
-        // $user2->assignRole('customer');
+        $user2 = new User;
+        $user2->name = 'marketer';
+        $user2->email = 'marketer@gmail.com';
+        $user2->password = Hash::make('test123');
+        $user2->save();
+        $user2->assignRole('marketer');
 
 
         $user3 = new User;

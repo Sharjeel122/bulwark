@@ -43,8 +43,12 @@ Route::get('/', function () {
             } else {
                 return redirect()->route('customer.support.tickers');
             }
-
-        } else {
+           
+        }  elseif (Auth::user()->hasRole('marketer')) 
+        {
+            return redirect()->route('marketer.index');
+        }
+        else {
             // return redirect()->route('seeker-area.show', Auth::user()->id);
             return redirect()->route('home');
         }
@@ -105,11 +109,19 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('admin-verified-website', 'AdminController@verified')->name('admin.verified.website');
         Route::post('admin-send-email', 'AdminController@send_email')->name('admin.send.email');
 
-
-
         Route::resource('paypal-plan', 'PaypalPlanController');
-    });
 
+      
+    });
+        // marketer
+    Route::group(['middleware' => ['role:marketer']], function () {
+        Route::resource('marketer','MarketerController');
+        Route::get('Add/report','MarketerController@add_reports')->name('marketer.add.new.report');
+        Route::get('fetchstudent','MarketerController@fetchstudent')->name('fetchstudent');
+        Route::post('update/report{id}','MarketerController@update_report')->name('update.report');
+        Route::get('result','MarketerController@result')->name('result');
+    });
+        // ------------------
     //    -------------Customer route------------
     Route::group(['middleware' => ['role:customer']], function () {
         Route::resource('customer', 'UserController');

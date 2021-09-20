@@ -1,0 +1,426 @@
+
+
+/*=======================================font family css start=============================*/
+
+@font-face {
+    font-family:"OpenSans-Regular";
+    
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family:"OpenSans-bold";
+    
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+
+@font-face {
+    font-family:"OpenSans-ExtraBold";
+    
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+@font-face {
+    font-family:"OpenSans-Light";
+    
+    src: url(../fonts/OpenSans-Light.ttf);
+}
+.font-regular{
+       font-family:"OpenSans-Regular";
+}
+/*=======================================globle classes css start=============================*/
+
+html,body{
+   overflow-x: hidden;
+}
+
+.orange-btn {
+   color: #f05a22;
+    border: 2px solid;
+    font-size: 18px;
+    font-weight: 600;
+        padding-top: 18px;
+    padding-right: 40px;
+    padding-bottom: 18px;
+    padding-left: 40px;
+    transition: all 300ms ease 0ms;
+     font-family:"OpenSans-Regular";
+}
+.orange-btn:hover{
+    color: white;
+     border: 2px solid #f05a22;
+    background-color: #f05a22;
+}
+.orange-clr{
+         color: #f05a22;
+}
+button:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+button:hover {
+      color: black;
+}
+
+
+/*----------------------top navbar css-------------------*/
+.header-top {
+    height: 80px;
+     transition: all 0.4s ease-in-out 0s;
+}
+.tiny .logo {
+    width: 45%;
+    transition: all 0.4s ease-in-out 0s;
+}
+.tiny .navbar {
+       background-color: #ffffff;
+        transition: all 0.4s ease-in-out 0s;
+}
+.tiny .nav-link {
+      color: black;
+}
+.navbar {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 13px;
+    background-color: #000000;
+    padding-bottom: 13px;
+
+}
+.header-top .fa-bars{
+        font-size: 31px;
+    color: #e8592a;
+}
+.logo {
+    width: 60%;
+}
+.nav-link {
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-family:"OpenSans-Regular";
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+}
+.nav-link:hover {
+    color: #f05a22!important;
+        transition: all .4s ease-in-out;
+    opacity: 0.7!important;
+}
+.header-search-icon {
+    font-size: 18px;
+    margin-top: -3px;
+}
+/*----------------------screen section css-------------------*/
+.top-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 27px;
+    font-family:"OpenSans-bold";
+}
+
+.box-wraper {
+    box-shadow: 0px 2px 18px 0px #0000004d;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 75px 0px;
+}
+.screen-image {
+    width: 75%;
+}
+/*----------------------page performance   css-------------------*/
+.page-performance {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.page-title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 16px!important;
+      font-family:"OpenSans-bold";
+}
+.report-title{
+    font-family:"OpenSans-Regular";
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.report-screenshots {
+    width: 75%;
+    margin: auto;
+        margin-bottom: 50px;
+}
+.image-shadow{
+    box-shadow: 0px 2px 18px 0px #0000004d;
+}
+.point-list {
+    padding-left: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.point-list li strong {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "OpenSans-bold";
+}
+/*----------------------offer section css-------------------*/
+.offer-section{
+    background-color: #eaeaea!important;
+    padding: 54px 0;
+}
+.offer-title{
+    font-size: 24px;
+    font-family: "OpenSans-bold";
+}
+.logo-text{
+        font-size: xx-large;
+         font-weight: 700;
+    font-family: "OpenSans-bold";
+    margin-top: 15px;
+}
+.security-logo-area {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.offer-text {
+    font-size: 26px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "OpenSans-bold";
+}
+.offer-image {
+    width: 30%;
+    margin-bottom: 30px;
+}
+.offerr-item-wraper {
+    margin-top: 40px;
+        margin-bottom: 40px;
+}
+.offer-name{
+      font-family: "OpenSans-bold";
+      font-size: 35px;
+}
+.btn-wraper{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/*----------------------contact section css-------------------*/
+.contact-section{
+    background-color: #000000;
+    padding: 54px 0;
+}
+.contact-title{
+    font-family: "OpenSans-bold";
+    font-weight: 700;
+    font-size: 48px;
+    color: #ffffff!important;
+    padding-bottom: 10px;
+}
+.contact-description{
+    font-family: "OpenSans-bold";
+    font-synthesis: 20px;
+    width: 50%;
+    color: white;
+}
+.contact-form  .form-control {
+    border: 0;
+    border-bottom: 2px solid #c8c8c8;
+    border-radius: 0px;
+    background: black;
+    font-size: 18px;
+    line-height: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+        margin-bottom: 40px;
+}
+.contact-form  .form-control:focus {
+    color: #495057;
+    background-color: black;
+    border-color: #c8c8c8;
+    outline: 0;
+    box-shadow: none;
+}
+.contact-form {
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contact-form button {
+   color: #ffffff!important;
+    border-color: #f05a22;
+    border-radius: 3px;
+    font-size: 16px;
+ font-family:"OpenSans-Regular";
+     background-color: #f05a22;
+    padding-top: 18px!important;
+    padding-right: 40px!important;
+    padding-bottom: 18px!important;
+    padding-left: 40px!important;
+    border:2px solid #f05a22;
+}
+
+.contact-form button:hover {
+background-color: black;
+  border-color: #f05a22;
+}
+
+/*---------------------footer css-------------------*/
+
+.footer-wraper {
+    width: 100%;
+    display: flex;
+}
+.footer-wraper-items {
+    margin: auto;
+}
+.footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+        padding-left: 30px;
+    padding-right: 30px;
+}
+.footer-link{
+    color: #979797!important;
+    transition: color 300ms ease 0ms;
+        font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+}
+.footer-link:hover{
+    color: #f05a22!important;
+    text-decoration: none;
+}
+i.footer-link {
+    font-size: 25px;
+    cursor: pointer;
+}
+/*----------------------media  queriess css-------------------*/
+
+
+@media screen and (max-width: 1024px) {
+
+}
+@media screen and (max-width: 768px) {
+.top-title {
+    font-size: 35px;
+}
+.page-title {
+    font-size: 38px;
+    }
+    .contact-form {
+    width: 100%;
+}
+.contact-description {
+    width: 80%;
+}
+
+}
+@media screen and (max-width: 576px) {
+.navbar-brand {
+    display: contents;
+}
+.navbar {
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    .security-logo {
+    width: 35%;
+}
+.top-title {
+    font-size: 20px;
+}
+.box-wraper {
+    box-shadow: 0px 2px 18px 0px #0000004d;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px 0px;
+}
+.page-title {
+    font-size: 22px;
+    line-height: 22px;
+}
+.report-screenshots {
+    width: 94%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.point-list li strong {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "OpenSans-bold";
+}
+.point-list {
+    padding-left: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "OpenSans-bold";
+    margin-top: 15px;
+}
+.offer-text {
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "OpenSans-bold";
+}
+.offer-image {
+    width: 25%;
+    margin-bottom: 10px;
+}
+.offerr-item-wraper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact-section {
+    background-color: #000000;
+    padding: 35px 0;
+}
+.contact-title {
+    font-family: "OpenSans-bold";
+    font-weight: 700;
+    font-size: 30px;
+    color: #ffffff!important;
+    padding-bottom: 10px;
+}
+.offer-name {
+    font-family: "OpenSans-bold";
+    font-size: 20px;
+}
+.footer-logo{
+        width: 33%;
+}
+.footer-wraper {
+    width: 100%;
+    display: inline-block;
+}
+.footer-wraper-items {
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.footer {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+@media screen and (max-width: 375px) {
+
+}
+@media screen and (max-width:360px) {
+
+}

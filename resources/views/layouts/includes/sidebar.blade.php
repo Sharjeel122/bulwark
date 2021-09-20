@@ -39,7 +39,12 @@
                              <li class="{{ Request::is('view-reports') ? 'active' : '' }} sidear-link-list-items  "><a href="{{ route('customer.reports') }}"><i
                             class="fa fa-flag-o"></i> View Report</a></li>
                 @endhasrole
-
+                <!-- marketer role side -->
+                @hasrole('marketer')
+                <li class="{{ Request::is('marketer') ? 'active' : '' }} sidear-link-list-items "><a href="{{ route('marketer.index') }}"><i
+                            class="fa fa-tachometer"></i> Dashborad</a></li>
+               
+                @endhasrole
                     {{--Employee Common Route starts--}}
                 @hasrole('employee1|employee2')
                 <li class="{{ Request::is('employee') ? 'active' : '' }} sidear-link-list-items "><a href="{{ route('employee.index') }}"><i

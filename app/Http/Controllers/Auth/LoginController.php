@@ -43,7 +43,10 @@ class LoginController extends Controller
         } elseif(Auth::user()->hasRole('employee1|employee2')) {
              return redirect()->route('employee.index');
 
-        }else{
+        }elseif (Auth::user()->hasRole('marketer')) {
+            return redirect()->route('marketer.index');
+        }
+        else{
             return redirect()->route('home');
         }
     }
